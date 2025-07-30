@@ -17,8 +17,8 @@ sudo yabai --load-sa
 # float: similar to default
 yabai -m config layout bsp
 
-# Set all padding and gaps to 20pt (default: 0)
-yabai -m config top_padding 10
+# Set all padding and gaps to 10pt (default: 0)
+yabai -m config top_padding 25
 yabai -m config bottom_padding 10
 yabai -m config left_padding 10
 yabai -m config right_padding 10
@@ -31,3 +31,6 @@ yabai -m config active_window_opacity 0.9
 
 # Start a Tmux session named main, or join the main session if it already exists
 tmux new-session -A -s main || tmux attach-session -t main
+
+# Starts skhd - keybind editor
+skhd --start-service
