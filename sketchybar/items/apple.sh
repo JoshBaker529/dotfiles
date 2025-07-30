@@ -14,7 +14,7 @@ apple_logo=(
 
 apple_prefs=(
   icon=$PREFERENCES
-  label="Preferences"
+  label="Settings"
   click_script="open -a 'System Preferences'; $POPUP_OFF"
 )
 
@@ -30,14 +30,14 @@ apple_lock=(
   click_script="pmset displaysleepnow; $POPUP_OFF"
 )
 
-sketchybar --add item apple.logo left                  \
-           --set apple.logo "${apple_logo[@]}"         \
-                                                       \
-           --add item apple.prefs popup.apple.logo     \
-           --set apple.prefs "${apple_prefs[@]}"       \
-                                                       \
-           --add item apple.activity popup.apple.logo  \
-           --set apple.activity "${apple_activity[@]}" \
-                                                       \
-           --add item apple.lock popup.apple.logo      \
-           --set apple.lock "${apple_lock[@]}"
+sketchybar --add item apple.logo left \
+  --set apple.logo "${apple_logo[@]}" \
+  \
+  --add item apple.prefs popup.apple.logo \
+  --set apple.prefs "${apple_prefs[@]}" \
+  \
+  --add item apple.activity popup.apple.logo \
+  --set apple.activity "${apple_activity[@]}" \
+  \
+  --add item apple.lock popup.apple.logo \
+  --set apple.lock "${apple_lock[@]}"
