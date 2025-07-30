@@ -1,0 +1,7 @@
+font-family = "Iosevka Nerd Font Mono"
+font-size = 16
+
+background = ffffff
+
+
+initial-command = "echo Testing"
