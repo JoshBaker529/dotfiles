@@ -1,0 +1,4 @@
+
+# Add commands to switch between Yabai spaces
+cmd + lshift - l  : yabai -m space --focus $(( $( yabai -m query --spaces --space | jq .index ) + 1 ))
+cmd + lshift - h  : yabai -m space --focus $(( $( yabai -m query --spaces --space | jq .index ) - 1 ))
