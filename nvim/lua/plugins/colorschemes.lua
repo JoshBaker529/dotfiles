@@ -8,6 +8,10 @@ return {
   },
 
   {
+    "Everblush/nvim",
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = Colorscheme,

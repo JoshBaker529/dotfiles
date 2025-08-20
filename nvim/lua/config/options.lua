@@ -1,4 +1,4 @@
-Colorscheme = "nordic"
+Colorscheme = "everblush"
 -- stylua: ignore
 local options = {
   autoindent     = true,                    --- Good auto indent
