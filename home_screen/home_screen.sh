@@ -19,16 +19,16 @@ sleep 0.4s
 ###############################################################################
 
 # Bottom left corner
-tmux send-keys -t 1 "echo \"Hello and welcome!\" " Enter
+tmux send-keys -t 1 "$HOME/Projects/homescreen-cli/build/editor" Enter
 
 # Middle column
 tmux send-keys -t 2 "$HOME/Projects/homescreen-cli/build/todo_list" Enter
 
 # Top right corner
-tmux send-keys -t 3 "echo \"Wecome! This is what your day is looking like:\" " Enter
+tmux send-keys -t 3 "$HOME/Projects/homescreen-cli/build/day_view" Enter
 
 # Bottom right corner
 tmux send-keys -t 4 "$HOME/Projects/homescreen-cli/build/calendar" Enter
 
 # Top let corner
-# asciiquarium
+asciiquarium
